@@ -1,67 +1,160 @@
+<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <link href="assets/css/style.css" rel="stylesheet">
-        <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0'>
-        <link rel="shortcut icon" href="assets/images/favicon.png" type="image/webp">
-        <link rel="apple-touch-icon" sizes="180x180" href="images/favicon.png">
-        <link rel="icon" href="assets/images/favicon.png" type="image/webp">
-        <title>SNOOZE ESPORTS</title>
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
-    </head>
-    <body>
-        <!-- Snowfall Background Animation -->
-        <section class="animated-background">
-            <div id="stars1"></div>
-            <div id="stars2"></div>
-            <div id="stars3"></div>
-        </section>
-        <!-- End of Snowfall Background Animation -->
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="icon" type="image/png" href="W.png" />
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap" rel="stylesheet">
+<title>SNOOZE ESPORTS</title>
+<link rel="stylesheet" href="styles.css" />
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap" rel="stylesheet">
+</head>
+<body>
+<!-- Navbar -->
+<header class="navbar">
+<div class="nav-content">
+<div class="nav-left">
+<img src="media/W.png" alt="Snooze Esports Logo" class="logo" />
+</div>
+<nav class="nav-links">
+  <div class="nav-item nav-dropdown">
+    <a href="#teams">TEAMS <span class="nav-arrow">&#x25BE;</span></a>
+    <div class="dropdown-menu">
+      <a href="https://snzesports.com/teams/cs">Counter-Strike</a>
+    </div>
+  </div>
+  <span class="nav-separator">/</span>
+  <div class="nav-item nav-dropdown">
+    <a href="#company">COMPANY <span class="nav-arrow">&#x25BE;</span></a>
+    <div class="dropdown-menu">
+      <a href="https://snzesports.com/about">About</a>
+      <a href="https://snzesports.com/sponsors">Sponsors</a>
+      <a href="https://snzesports.com/links">Links</a>
+    </div>
+  </div>
+  <span class="nav-separator">/</span>
+  <a href="#shop">SHOP</a>
+</nav>
+</div>
+</header>
 
-        <div class="min-h-full flex-h-center" id="background_div">
-            <input type="hidden" value="https://bio.link" id="app-url">
-                <input type="hidden" value="null" id="is-featured">
-                    <canvas id="bg-canvas" class="background-overlay"></canvas>
-                </input>
-            </input>
 
-            <div class="mt-48 page-full-wrap relative ">
-                <input type="hidden" value="creator-page" id="page-type">
-                <img class="display-image m-auto" data-src="assets/images/logo_crop.png" src="assets/images/logo_crop.png" alt="[Your photo alt]"/>
-                <h2 class="page-title page-text-color page-text-font mt-16 text-center">SNOOZE</h2>
-                       
-                <div class="mt-24">
-                    <div class="page-item-wrap relative">
-                        <div class="page-item flex-both-center absolute"></div>
-                        <a target="_blank"  class="page-item-each py-10 flex-both-center" href="http://discord.gg/E3rMyUjDPR" data-id="261652" data-type="page_item">
-                            <img class="link-each-image" data-src="assets/images/discord_mono.jpg" src="assets/images/discord_mono.jpg" alt="Discord"/>
-                            <span class=" item-title text-center">Discord</span>
-                        </a>
-                    </div>                           
-                    <div class="page-item-wrap relative">
-                        <div class="page-item flex-both-center absolute"></div>
-                        <a target="_blank"  class="page-item-each py-10 flex-both-center" href="https://x.com/snz_esports" data-id="261685" data-type="page_item">
-                            <img class="link-each-image" data-src="assets/images/twitter.jpg" src="assets/images/twitter.jpg" alt="Twitter"/>
-                            <span class=" item-title text-center">Twitter</span>
-                        </a>
-                    </div>    
-                    <div class="page-item-wrap relative">
-                        <div class="page-item flex-both-center absolute"></div>
-                        <a target="_blank"  class="page-item-each py-10 flex-both-center" href="https://instagram.com/snoozegg" data-id="261685" data-type="page_item">
-                            <img class="link-each-image" data-src="assets/images/insta_mono.png" src="assets/images/insta_mono.png" alt="Instagram"/>
-                            <span class=" item-title text-center">Instagram</span>
-                        </a>
-                    </div>
-                        </a>
-                    </div>                    
-                </div>                                                                                
-            </div>
-        </div>
-    </body>
+<!-- Banner -->
+<section class="banner">
+  <img src="media/snooze_2.png" alt="Snooze Esports Banner" class="banner-img" />
+</section>
 
-    <!--
-    A different snowfall    
-    <script  src="assets/js/snowfall.js"></script>
-    -->
+<hr class="section-separator section-separator-white">
+
+<!-- Upcoming Match Section -->
+<section class="match-section">
+  <div class="match-container">
+    <!-- Box 1: Upcoming Match -->
+    <div class="match-box match-upcoming">
+        <br>
+        <br>
+        <br>
+      <span class="match-title">UPCOMING MATCH</span>
+    </div>
+    <!-- Box 2: Logos -->
+    <div class="match-box match-logos">
+      <div class="logo-spot">
+        <!-- Replace src with your team logo -->
+        <img src="media/team1-logo.png" alt="Team 1 Logo" class="match-logo" />
+      </div>
+      <span class="vs-text">VS</span>
+      <div class="logo-spot">
+        <!-- Replace src with opponent logo -->
+        <img src="media/team2-logo.png" alt="Team 2 Logo" class="match-logo" />
+      </div>
+    </div>
+    <!-- Box 3: Results -->
+    <div class="match-box match-results">
+      <span class="results-title">RECENT RESULTS</span>
+      <ul class="results-list">
+        <li>
+          <span class="result-team result-team-left">SNOOZE&nbsp;AC</span>
+          <span class="result-score result-score-win">2 - 1</span>
+          <span class="result-team result-team-right">VITALITY</span>
+        </li>
+        <li>
+          <span class="result-team result-team-left">SNOOZE&nbsp;MAIN</span>
+          <span class="result-score result-score-loss">1 - 2</span>
+          <span class="result-team result-team-right">SQUEAKS & CO</span>
+        </li>
+        <li>
+          <span class="result-team result-team-left">SNOOZE&nbsp;AC</span>
+          <span class="result-score result-score-loss">0 - 2</span>
+          <span class="result-team result-team-right">GOON SQUAD</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<hr class="section-separator section-separator-white">
+
+<!-- Teams Section -->
+<section class="teams-section">
+  <h2>TEAMS</h2>
+  <div class="teams-images">
+    <a href="https://snzesports.com/teams/cs">
+      <img src="media/cs-team-pic.png" alt="Counter-Strike Team" class="team-img" />
+    </a>
+    <a href="#" class="valorant-link">
+      <img src="media/valorant-team-pic.png" alt="Valorant Team" class="team-img valorant" />
+    </a>
+    <a href="#" class="minecraft-link">
+      <img src="media/minecraft-team-pic.png" alt="Minecraft Team" class="team-img minecraft" />
+    </a>
+  </div>
+</section>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="footer-sections">
+    <div class="footer-info">
+      <div class="footer-section">
+        <h4>Teams</h4>
+        <ul>
+          <li><a href="https://snzesports.com/teams/cs">Counter-Strike</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Shop</h4>
+        <ul>
+          <li><a href="https://snzesports.com/shop/esports">Esports</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="https://snzesports.com/about">About</a></li>
+          <li><a href="https://snzesports.com/sponsors">Sponsors</a></li>
+          <li><a href="https://snzesports.com/links">Links</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+      </div>
+    </div>
+    <div class="footer-logo">
+      <img src="media/W.png" alt="Snooze Esports Logo" class="footer-img" />
+    </div>
+  </div>
+  <div class="footer-copyright">
+    © 2025 SNOOZE ESPORTS / GRCW
+  </div>
+</footer>
+
+
+</body>
 </html>
