@@ -456,6 +456,42 @@ body::after {
   text-align: center;
 }
 
+.site-message {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  background: #222;
+  color: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.18);
+  padding: 1rem 2.5rem 1rem 1.5rem;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  font-family: 'Brunson', Arial, sans-serif;
+  font-size: 1.1rem;
+  animation: slideInMessage 0.5s;
+}
+
+.site-message-close {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 1.7rem;
+  margin-left: 1.2rem;
+  cursor: pointer;
+  font-weight: bold;
+  transition: color 0.2s;
+}
+.site-message-close:hover {
+  color: #ff2a2a;
+}
+
+@keyframes slideInMessage {
+  from { transform: translateX(100%); opacity: 0; }
+  to   { transform: translateX(0); opacity: 1; }
+}
+
 @media (max-width: 900px) {
   .match-section,
   .section-separator,
@@ -617,5 +653,13 @@ body::after {
     padding: 0.5rem 0;
     text-align: center;
     width: 100%;
+  }
+
+  .site-message {
+    right: 8px;
+    left: 8px;
+    bottom: 8px;
+    font-size: 0.95rem;
+    padding: 0.8rem 2rem 0.8rem 1rem;
   }
 }
