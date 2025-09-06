@@ -6,44 +6,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles.css">
   <link rel="icon" type="image/png" href="media/W.png" />
-  <style>
-    body {
-      margin: 0;
-      background: #101010;
-      min-height: 100vh;
-      width: 100vw;
-      overflow-x: hidden;
-    }
-    .center-message {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      color: #f5f5f5;
-      font-family: 'Brunson', Arial, sans-serif;
-      font-size: 2rem;
-      text-align: center;
-      letter-spacing: 1px;
-      background: rgba(24,24,24,0.85);
-      padding: 2rem 2.5rem;
-      border-radius: 18px;
-      box-shadow: 0 2px 12px rgba(0,0,0,0.12);
-    }
-    @media (max-width: 600px) {
-      .center-message {
-        font-size: 1.2rem;
-        padding: 1rem 1.2rem;
-      }
-    }
-  </style>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap" rel="stylesheet">
 </head>
 <body>
 <!-- Navbar -->
-<header class="navbar" style="background:#101010;">
+<header class="navbar">
   <div class="nav-content">
     <div class="nav-left">
       <a href="https://snzesports.com">
         <img src="media/W.png" alt="Snooze Esports Logo" class="logo" />
+      </a>
     </div>
     <nav class="nav-links">
       <div class="nav-item nav-dropdown">
@@ -73,13 +45,13 @@
 <br>
 <br>
 <br>
-<br>
-<br>
 
-  <!-- Centered 404 message above the footer -->
-  <div class="center-message" style="position:relative; top:auto; left:auto; transform:none; margin:4rem auto 4rem auto; max-width:600px;">
+<!-- Centered 404 message above the footer, matching index.html -->
+<section class="teams-section">
+  <div class="center-message" style="margin-left:auto; margin-right:auto;">
     This page does not exist (yet)
   </div>
+</section>
 
 <br>
 <br>
@@ -88,12 +60,9 @@
 <br>
 <br>
 <br>
-<br>
-<br>
-<br>
-<br>
 
-  <!-- Footer -->
+
+<!-- Footer -->
 <footer class="footer">
   <div class="footer-sections">
     <div class="footer-info">
@@ -117,24 +86,15 @@
           <li><a href="https://snzesports.com/links">Links</a></li>
         </ul>
       </div>
-      <div class="footer-section">
-      </div>
+      <div class="footer-section"></div>
     </div>
     <div class="footer-logo">
       <img src="media/W.png" alt="Snooze Esports Logo" class="footer-img" />
     </div>
   </div>
   <div class="footer-copyright">
-    © 2025 SNOOZE ESPORTS / GRCW
+    © <span style="font-family:'Steelfish Bold', Arial, sans-serif; font-size:0.9rem;">2025 SNOOZE ESPORTS / <a href="https://grcw.cz" target="_blank" style="font-family:'Steelfish Bold', Arial, sans-serif; font-size:0.9rem;">GRCW</a></span>
   </div>
 </footer>
-
-<div id="site-message" class="site-message">
-  <span class="site-message-text">
-    🚧 This site is actively being worked on. Some pages may be currently unavailable.
-  </span>
-  <button class="site-message-close" onclick="document.getElementById('site-message').style.display='none'">&times;</button>
-</div>
-
 </body>
 </html>
