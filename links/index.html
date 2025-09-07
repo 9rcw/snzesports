@@ -2,11 +2,43 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>404 | Page Not Found</title>
+  <title>Links</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles.css">
   <link rel="icon" type="image/png" href="media/W.png" />
   <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap" rel="stylesheet">
+  <style>
+    .links-btn-row {
+      display: flex;
+      gap: 2rem;
+      margin-top: 2rem;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .links-btn-row a {
+      flex: 1 1 220px;
+      min-width: 180px;
+      max-width: 320px;
+      display: flex;
+      justify-content: center;
+    }
+    @media (max-width: 700px) {
+      .links-btn-row {
+        flex-direction: column;
+        gap: 1.2rem;
+        align-items: center;
+      }
+      .links-btn-row a {
+        width: 100%;
+        min-width: 0;
+        max-width: 100vw;
+      }
+      .teams-section {
+        margin: 1rem auto;
+        padding: 0 0.5rem;
+      }
+    }
+  </style>
 </head>
 <body>
 <!-- Navbar -->
@@ -41,10 +73,10 @@
 
 <!-- Main content -->
 <section class="teams-section">
-  <h2>Links</h2>
-  <div style="display: flex; gap: 2rem; margin-top: 2rem;">
+  <h2 style="text-align: center;">Links</h2>
+  <div class="links-btn-row">
     <a href="https://discord.com/invite/E3rMyUjDPR" target="_blank" style="text-decoration:none;">
-      <button style="background: #181818; border: none; border-radius: 18px; padding: 1.4rem 1.7rem; display: flex; align-items: center; gap: 1rem; cursor: pointer; box-shadow: 0 2px 12px rgba(0,0,0,0.12);">
+      <button style="background: #181818; border: none; border-radius: 18px; padding: 1.4rem 1.7rem; width: 100%; display: flex; align-items: center; gap: 1rem; cursor: pointer; box-shadow: 0 2px 12px rgba(0,0,0,0.12); justify-content: center;">
         <span style="display: flex; align-items: center; justify-content: center; width:48px; height:48px; background:#222; border-radius:50%; overflow:hidden;">
           <img src="assets/images/discord_mono.jpg" alt="Discord" style="width:32px; height:32px; object-fit: contain; border-radius: 50%;">
         </span>
@@ -52,7 +84,7 @@
       </button>
     </a>
     <a href="https://www.instagram.com/snoozegg" target="_blank" style="text-decoration:none;">
-      <button style="background: #181818; border: none; border-radius: 18px; padding: 1.4rem 1.7rem; display: flex; align-items: center; gap: 1rem; cursor: pointer; box-shadow: 0 2px 12px rgba(0,0,0,0.12);">
+      <button style="background: #181818; border: none; border-radius: 18px; padding: 1.4rem 1.7rem; width: 100%; display: flex; align-items: center; gap: 1rem; cursor: pointer; box-shadow: 0 2px 12px rgba(0,0,0,0.12); justify-content: center;">
         <span style="display: flex; align-items: center; justify-content: center; width:48px; height:48px; background:#222; border-radius:50%; overflow:hidden;">
           <img src="assets/images/insta_mono.png" alt="Instagram" style="width:32px; height:32px; object-fit: contain; border-radius: 50%;">
         </span>
@@ -60,7 +92,7 @@
       </button>
     </a>
     <a href="https://x.com/snz_esports" target="_blank" style="text-decoration:none;">
-      <button style="background: #181818; border: none; border-radius: 18px; padding: 1.4rem 1.7rem; display: flex; align-items: center; gap: 1rem; cursor: pointer; box-shadow: 0 2px 12px rgba(0,0,0,0.12);">
+      <button style="background: #181818; border: none; border-radius: 18px; padding: 1.4rem 1.7rem; width: 100%; display: flex; align-items: center; gap: 1rem; cursor: pointer; box-shadow: 0 2px 12px rgba(0,0,0,0.12); justify-content: center;">
         <span style="display: flex; align-items: center; justify-content: center; width:48px; height:48px; background:#222; border-radius:50%; overflow:hidden;">
           <img src="assets/images/x_mono.png" alt="Twitter/X" style="width:32px; height:32px; object-fit: contain; border-radius: 50%;">
         </span>
@@ -70,6 +102,7 @@
   </div>
 </section>
 
+<br>
 <br>
 <br>
 <br>
